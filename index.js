@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const cors = require('cors');
-// const enforce = require('express-sslify');
+const cors = require('cors');
+const enforce = require('express-sslify');
 const path = require('path');
 require('dotenv').config();
 require('./db/mongoose');
@@ -14,8 +14,8 @@ const surveyRouter = require('./routes/surveyRoutes');
 
 const app = express();
 
-// app.use(cors());
-// app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.use(cors());
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(bodyParser.json());
 // ({ extended: false });
 app.use(
