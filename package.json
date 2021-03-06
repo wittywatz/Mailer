@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "7.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --trace-warnings index.js",
+    "server": "nodemon --trace-warnings index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.15",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "path-parser": "^6.1.0",
+    "stripe": "^8.137.0"
+  }
+}
