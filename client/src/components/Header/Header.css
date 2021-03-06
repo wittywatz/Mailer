@@ -1,0 +1,9 @@
+@media (max-width: 370px) {
+  .header-item > li:first-child {
+    display: none;
+  }
+}
+
+nav {
+  font-weight: bold;
+}

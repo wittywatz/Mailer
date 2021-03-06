@@ -1,0 +1,54 @@
+.landing {
+  /* position: relative; */
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/customer-feedback.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  /* margin-top: -24px;
+  margin-bottom: -50px; */
+}
+
+.landing-inner {
+  padding-top: 5rem;
+  /* padding: 15rem auto; */
+}
+.landing-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.849);
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+  font-family: 'DM Serif Text', serif;
+  padding-left: 20px;
+  text-align: center;
+  /* text-justify: inter-word; */
+  font-weight: bold;
+}
+.actual-landing-content {
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: 10px 10px 10px #777;
+}
+
+.bbttnn {
+  border-radius: 5px;
+  background-color: #ee6d72;
+  color: white;
+  outline: none;
+  border: none;
+  line-height: 1;
+  padding: 0 10px 10px;
+}
+.bbttnn a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.bbttnn:hover {
+  background-color: #cf4448;
+}
