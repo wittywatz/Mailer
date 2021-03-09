@@ -34,7 +34,7 @@ router.post('/api/surveys', requireLogin, requireCredits, async (req, res) => {
 });
 
 router.get('/api/surveys/:surveyId/:choice', (req, res) => {
-  res.send('Thanks for the feedback');
+  res.send('Thanks for the feedback'); //HTML TO BE SENT
 });
 
 router.get('/api/surveys', requireLogin, async (req, res) => {
@@ -54,8 +54,8 @@ router.post('/api/surveys/webhooks', (req, res) => {
       return { email, surveyId, choice };
     }
   });
-  const compactEvents = _.compact(events);
-  const uniqueEvents = _.uniqBy(compactEvents, 'email', 'surveyId');
+  const compactEvents = _.compact(events); //Removes all falsey values
+  const uniqueEvents = _.uniqBy(compactEvents, 'email', 'surveyId'); //Get unique events
   _.each(uniqueEvents, async ({ surveyId, email, choice }) => {
     Survey.updateOne(
       {

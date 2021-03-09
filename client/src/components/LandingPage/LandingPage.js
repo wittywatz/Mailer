@@ -13,7 +13,7 @@ class LandingPage extends Component {
         <div className="dark-overlay landing-inner">
           <div className="landing-content">
             <div className="actual-landing-content">
-              <p>
+              <p className="catch-phrase">
                 <span style={{ fontSize: '5rem' }}>F</span>ed up with
                 conventional customer feedback system?
               </p>

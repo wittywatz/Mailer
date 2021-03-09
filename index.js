@@ -15,7 +15,10 @@ const surveyRouter = require('./routes/surveyRoutes');
 const app = express();
 
 app.use(cors());
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+if (process.env.NODE_ENV === 'production') {
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
+
 app.use(bodyParser.json());
 // ({ extended: false });
 app.use(

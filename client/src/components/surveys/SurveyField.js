@@ -4,7 +4,7 @@ const SurveyField = (props) => {
   return (
     <div>
       <label style={{ color: '#fff', fontSize: '1.2rem' }}>{props.label}</label>
-      <input {...props.input} style={{ marginBottom: '5px' }} />
+      <input {...props.input} style={{ marginBottom: '5px', color: '#fff' }} />
       <div className="red-text" style={{ marginBottom: '15px' }}>
         {props.meta.touched && props.meta.error}
       </div>

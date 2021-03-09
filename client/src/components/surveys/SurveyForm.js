@@ -19,7 +19,8 @@ class SurveyForm extends Component {
           {name === 'recipients' ? (
             <p style={{ fontWeight: 'bold' }}>
               <span style={{ color: 'red', fontSize: '1.2rem' }}>Note:</span>{' '}
-              Emails should be separated by commas <br />
+              Emails should be separated by commas and should not have trailing
+              commas. <br />
               Only a maximum of 5 emails are allowed at this point
             </p>
           ) : null}

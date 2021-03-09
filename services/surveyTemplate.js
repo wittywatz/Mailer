@@ -1,4 +1,4 @@
-const URL = 'https://723d3e9f6fad.ngrok.io';
+const URL = 'https://mailer-app-watson.herokuapp.com';
 module.exports = (survey) => {
   return `
   <html>

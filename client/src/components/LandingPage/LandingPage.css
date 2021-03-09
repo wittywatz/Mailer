@@ -21,9 +21,9 @@
   align-items: center;
   justify-content: center;
   color: rgba(255, 255, 255, 0.849);
-  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-  font-family: 'DM Serif Text', serif;
-  padding-left: 20px;
+  /* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap'); */
+  /* font-family: 'DM Serif Text', serif; */
+  padding: 0 20px;
   text-align: center;
   /* text-justify: inter-word; */
   font-weight: bold;
@@ -43,6 +43,7 @@
   border: none;
   line-height: 1;
   padding: 0 10px 10px;
+  margin-bottom: 40px;
 }
 .bbttnn a {
   color: white;
@@ -51,4 +52,10 @@
 }
 .bbttnn:hover {
   background-color: #cf4448;
+}
+
+@media (max-width: 443px) {
+  .catch-phrase {
+    display: none;
+  }
 }
