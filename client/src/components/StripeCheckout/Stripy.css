@@ -1,0 +1,9 @@
+.button-content::before {
+  content: 'Add Credits';
+}
+
+@media (max-width: 370px) {
+  .button-content::before {
+    content: '$$$';
+  }
+}
